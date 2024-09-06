@@ -1,9 +1,9 @@
 # Install SnapServer on minimal OS - script v3.0.2 [2021-10-03]
 
 # Define architecture (e.g amd64, i386, arm32v6, arm64v8 etc)
-ARG ARCHITECTURE="amd64"
+ARG ARCHITECTURE="arm64"
 # Define Alpine version (default '3.14.2')
-ARG ALPINE_BASE="3.14.3"
+ARG ALPINE_BASE="3.20.3"
 
 # SnapCast build stage
 FROM ${ARCHITECTURE}/alpine:${ALPINE_BASE} as snapcast
