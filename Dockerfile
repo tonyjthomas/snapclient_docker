@@ -9,7 +9,7 @@ WORKDIR /root
 # Dummy file is needed, because there's no conditional copy
 COPY dummy qemu-*-static /usr/bin/
 
-RUN apk -U add alsa-lib-dev avahi-dev bash build-base ccache cmake expat-dev flac-dev git libvorbis-dev opus-dev soxr-dev libstdc++6 libstdc++  \
+RUN apk -U add alsa-lib-dev avahi-dev bash build-base ccache cmake expat-dev flac-dev git libvorbis-dev opus-dev soxr-dev libstdc++ libgcc  \
  && git clone --recursive https://github.com/badaix/snapcast.git \
  && cd snapcast \
  && wget https://boostorg.jfrog.io/artifactory/main/release/1.78.0/source/boost_1_78_0.tar.bz2 && tar -xvjf boost_1_78_0.tar.bz2 \
