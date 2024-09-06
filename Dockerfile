@@ -1,4 +1,4 @@
-FROM debian:bookworm
+FROM ubuntu:24.04
 
 RUN apt-get update && apt-get install wget ca-certificates -y
 
